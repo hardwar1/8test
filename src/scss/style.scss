@@ -54,6 +54,21 @@ body {
   border-radius: 5px;
   border: 0;
   background-color: #a5c7f9;
+  cursor: pointer;
+  outline: 0;
+  transition: background-color 0.3s;
+
+  &:focus {
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+  }
+  &:hover {
+    background-color: #bed5f8;
+  }
+  
+  &:active {
+    background-color: #94b0da;
+    transition: background-color 0.1s;
+  }
 }
 
 .green-block {
@@ -152,7 +167,6 @@ body {
     border-radius: 5px;
   }
 }
-
 
 .contact-me {
   display: flex;
